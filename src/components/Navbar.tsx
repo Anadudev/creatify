@@ -2,22 +2,6 @@ import React from "react";
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-// ---------
-import {
-  Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 import { ChevronDown } from "lucide-react";
 
 const navItems = [
@@ -56,7 +40,7 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="w-full flex">
-      <div className="flex justify-between shadow-md shadow-neutral-700/50 items-center w-full p-4">
+      <div className="flex justify-between shadow-md shadow-neutral-700/50 items-center w-full p-4 max-w-6xl mx-auto">
         <div className="">
           <Logo />
         </div>
