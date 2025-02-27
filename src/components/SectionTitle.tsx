@@ -4,9 +4,9 @@ import { LucideIcon } from "lucide-react";
 
 interface SectionTitleProps {
   title: string;
-  description: string;
+  description?: string;
   primaryButton: string;
-  secondaryButton: string;
+  secondaryButton?: string;
   SecondaryIcon?: LucideIcon;
 }
 
@@ -23,7 +23,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       <p className="text-center text-gray-400">{description}</p>
       <div className="flex justify-center space-x-4">
         <Button className="">{primaryButton}</Button>
-        <Button className="bg-transparent border">
+        <Button className="bg-neutral-900 border border-neutral-600">
           {SecondaryIcon && <SecondaryIcon />}
           {secondaryButton}
         </Button>

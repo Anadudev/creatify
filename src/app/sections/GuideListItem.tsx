@@ -15,7 +15,7 @@ const GuideListItem: React.FC<GuideListItemProps> = ({
   linkText,
 }) => {
   return (
-    <div className="space-y-4 hover:bg-neutral-800 card-bg-blur rounded-xl p-4 max-w-[21rem] mx-auto cursor-default ">
+    <div className="space-y-4 hover:bg-neutral-800 card-bg-blur-hover rounded-xl p-4 max-w-[21rem] mx-auto cursor-default ">
       <div className="flex gap-2">
         <Icon className="text-primary size-5" />
         <h4 className="font-bold text-neutral-50">{title}</h4>
