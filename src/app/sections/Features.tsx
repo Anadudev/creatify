@@ -41,7 +41,7 @@ const Features = () => {
       />
       <div className="relative max-w-7xl mx-auto ">
         {features.map((feature, index) => (
-          <div key={index} className={`flex group cursor-pointer transition-all ease-in-out duration-300`}>
+          <div key={index} className={`flex group cursor-default transition-all ease-in-out duration-300`}>
             <div className="w-[45%] group-even:border-y border-neutral-600 p-4 space-y-2">
               <div className="flex group-hover:text-primary gap-2">
                 <feature.icon className="size-3" />

@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen py-12 space-y-9  max-w-6xl mx-auto">
+    <section className="min-h-screen py-12 space-y-9 max-w-6xl mx-auto">
       <div className="text-black font-bold bg-neutral-50 w-fit px-4 py-2 rounded-full mx-auto flex items-center justify-center gap-4 cursor-pointer text-sm">
         <p className="">Learn About the Creatify Design Token Format</p>
         <ArrowRight
