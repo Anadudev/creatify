@@ -36,7 +36,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
       </div>
       <div className="">
         <div className="relative h-48 bg-cover">
-          <Image src={thumbnail || ""} className="h-full" alt="" fill />
+          <Image src={thumbnail || ""} className="h-full rounded-b-xl" alt="" fill />
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@ import {
   Zap,
 } from "lucide-react";
 import React from "react";
-import GuideCard from "./GuideCard";
-import GuideListItem from "./GuideListItem";
+import GuideCard from "../../components/GuideCard";
+import GuideListItem from "../../components/GuideListItem";
 
 const guides = [
   {

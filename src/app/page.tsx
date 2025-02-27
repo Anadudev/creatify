@@ -4,6 +4,7 @@ import Features from "@/app/sections/Features";
 import Testimonials from "@/app/sections/Testimonials";
 import Guide from "@/app/sections/Guide";
 import Trustees from "@/app/sections/Trustees";
+import About from "@/app/sections/About";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Testimonials />
       <Guide />
       <Trustees />
+      <About />
     </div>
   );
 }

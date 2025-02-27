@@ -22,11 +22,13 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       <h2 className="text-4xl font-extrabold text-center">{title}</h2>
       <p className="text-center text-gray-400">{description}</p>
       <div className="flex justify-center space-x-4">
-        <Button className="">{primaryButton}</Button>
-        <Button className="bg-neutral-900 border border-neutral-600">
-          {SecondaryIcon && <SecondaryIcon />}
-          {secondaryButton}
-        </Button>
+        {primaryButton && <Button className="">{primaryButton}</Button>}
+        {secondaryButton && (
+          <Button className="bg-neutral-900 border border-neutral-600">
+            {SecondaryIcon && <SecondaryIcon />}
+            {secondaryButton}
+          </Button>
+        )}
       </div>
     </div>
   );
