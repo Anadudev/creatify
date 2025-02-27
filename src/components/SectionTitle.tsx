@@ -5,7 +5,7 @@ import { LucideIcon } from "lucide-react";
 interface SectionTitleProps {
   title: string;
   description?: string;
-  primaryButton: string;
+  primaryButton?: string;
   secondaryButton?: string;
   SecondaryIcon?: LucideIcon;
 }
