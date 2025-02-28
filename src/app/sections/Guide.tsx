@@ -66,7 +66,7 @@ const guideList = [
 
 const Guide = () => {
   return (
-    <div className=" max-w-6xl mx-auto">
+    <section className=" max-w-6xl mx-auto space-y-8">
       <SectionTitle
         title="Easy setup and instant output"
         description="Noting has been more easy for designers and more customizable for developers"
@@ -95,7 +95,7 @@ const Guide = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

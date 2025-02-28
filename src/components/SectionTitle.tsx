@@ -17,8 +17,8 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   secondaryButton,
   SecondaryIcon,
 }) => {
-  return (
-    <div className="space-y-4 max-w-[25rem] mx-auto mb-12">
+return (
+    <div className="space-y-4 max-w-[25rem] mx-auto">
       <h2 className="text-4xl font-extrabold text-center">{title}</h2>
       <p className="text-center text-gray-400">{description}</p>
       <div className="flex justify-center space-x-4">

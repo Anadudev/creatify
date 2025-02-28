@@ -32,7 +32,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="max-w-6xl mx-auto space-y-8">
       <SectionTitle
         title="Taking design tokens to the next level"
         description="Creatify helps you gain control over your design system across teams and products"

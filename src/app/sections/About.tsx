@@ -21,9 +21,11 @@ const resources = [
 
 const About = () => {
   return (
-    <section className="max-w-6xl mx-auto">
-      <div className="pt-2">
+    <section className="max-w-6xl mx-auto space-y-8 pb-4">
+      <div className="">
         <hr className="border-neutral-700" />
+      </div>
+      <div className="">
         <SectionTitle title="Design tokens are the heart of your design system" />
       </div>
       <div className="flex w-fit mx-auto gap-4">

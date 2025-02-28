@@ -16,7 +16,7 @@ const TrusteeCard: React.FC<TrusteeCardProps> = ({ trustee }) => {
   return (
     <div
       title={trustee.companyName}
-      className="rounded-xl p-4 flex flex-col gap-4 w-[25rem] flex-1 card-bg-blur bg-neutral-50 border border-transparent hover:border-neutral-500 bg-opacity-15"
+      className="rounded-xl p-4 flex flex-col justify-between gap-4 w-[25rem] min-w-[20rem] flex-1 card-bg-blur bg-neutral-50 border border-transparent hover:border-neutral-500 bg-opacity-15"
     >
       <div className="relative">
         <Image src={trustee.logo} fill alt={trustee.companyName} />

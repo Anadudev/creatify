@@ -72,9 +72,9 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <footer className="max-w-6xl mx-auto">
+    <footer className="max-w-6xl mx-auto space-y-4">
       <div className="">
-        <hr />
+        <hr className="border-neutral-700" />
       </div>
       <div className=" flex justify-between">
         <div className="">
@@ -86,7 +86,10 @@ const Footer = () => {
               <h3 className="mb-4 font-bold text-lg">{item.title}</h3>
               {item.items.map((item, index) => (
                 <div key={index}>
-                  <Link href={item.link} className="block mb-2 text-sm hover:text-accent transition-all duration-200 text-neutral-500">
+                  <Link
+                    href={item.link}
+                    className="block mb-2 text-sm hover:text-accent transition-all duration-200 text-neutral-500"
+                  >
                     {item.name}
                   </Link>
                 </div>
@@ -96,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="">
-        <hr />
+        <hr className="border-neutral-700" />
       </div>
       <div className="flex justify-between p-4 text-neutral-400 font-semibold text-sm">
         <div className="flex gap-4">

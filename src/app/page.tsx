@@ -8,7 +8,7 @@ import About from "@/app/sections/About";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="space-y-10">
       <Hero />
       <LovedBy />
       <Features />
