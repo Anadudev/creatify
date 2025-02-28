@@ -12,7 +12,7 @@ const ActionLink: React.FC<ActionLinkProps> = ({ link, className, text }) => {
       <p className="">{text}</p>
       <ArrowRight
         size={20}
-        className="bg-black group-hover/actionLink:translate-x-1 duration-200 text-neutral-50 p-1 rounded-full"
+        className="bg-black group-hover/actionLink:translate-x-1 duration-500 text-neutral-50 p-1 rounded-full"
       />
     </Link>
   );
