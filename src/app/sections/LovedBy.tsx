@@ -8,7 +8,7 @@ const LovedBy = () => {
     <section className="space-y-8 px-2">
       <h2 className="text-xl font-bold text-center">Creatify is loved by</h2>
       <Marquee autoFill pauseOnHover>
-        <div className="flex overflow-hidden gap-9">
+        <div className="flex overflow-hidden mx-3 gap-6">
           {lovedByCompanyLogos.map((logo, index) => (
             <div
               key={index}
