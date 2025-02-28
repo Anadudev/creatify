@@ -16,7 +16,7 @@ const GuideListItem: React.FC<GuideListItemProps> = ({
       </div>
       <div className="">
         <p className="text-neutral-500 hover:text-neutral-400">
-          {body} <Link href="#">{linkText}</Link>
+          {body} {linkText && <Link href="#" className="text-blue-500">{linkText}</Link>}
         </p>
       </div>
     </div>

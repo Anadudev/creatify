@@ -46,7 +46,7 @@ export const guideList = [
 	{
 		icon: Earth,
 		title: "Get teh support you needed",
-		body: "We're here to help you to get the output you need. Feel free to challenge us if  you think your output is not possible",
-		likText: "read more here.",
+		body: "We're here to help you to get the output you need. Feel free to challenge us if  you think your output is not possible!",
+		linkText: "read more here.",
 	},
 ];

@@ -12,7 +12,7 @@ const TrusteeCard: React.FC<TrusteeCardProps> = ({ trustee }) => {
         <Image src={trustee.logo} fill alt={trustee.companyName} />
       </div>
       <div className="">
-        <p>{trustee.detail}</p>
+        <p className="">&quot;{trustee.detail}&quot;</p>
       </div>
       <div className="flex gap-4">
         <div className="relative size-12">

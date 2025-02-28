@@ -33,6 +33,7 @@ const Guide = () => {
             Icon={guide.icon}
             title={guide.title}
             body={guide.body}
+            linkText={guide.linkText}
           />
         ))}
       </div>
