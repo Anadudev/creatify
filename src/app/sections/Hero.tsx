@@ -7,7 +7,8 @@ import ActionLink from "@/components/ActionLink";
 const Hero = () => {
   return (
     <section className="pt-16 space-y-9 max-w-6xl mx-auto  px-2">
-      <ActionLink link="#" text="Learn About the Creatify Design Token Format"/>
+      <ActionLink link="#" className="hidden sm:flex" text="Learn About the Creatify Design Token Format"/>
+      <ActionLink link="#" className="sm:hidden" text="Learn Creatify Design Token Format"/>
       <h1 className="bg-gradient-to-r from-violet-200 to-violet-700 bg-clip-text font-extrabold text-transparent text-6xl sm:text-7xl capitalize text-center">
         your design token engine
       </h1>
