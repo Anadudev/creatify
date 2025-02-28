@@ -16,7 +16,7 @@ return (
       <div className="flex justify-center space-x-4">
         {primaryButton && <Button className="">{primaryButton}</Button>}
         {secondaryButton && (
-          <Button className="bg-neutral-900 border border-neutral-600">
+          <Button className="bg-neutral-900 border hover:bg-neutral-900 border-neutral-600">
             {SecondaryIcon && <SecondaryIcon />}
             {secondaryButton}
           </Button>
