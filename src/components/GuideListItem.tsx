@@ -1,12 +1,6 @@
-import { LucideIcon } from "lucide-react";
-import Link from "next/link";
 import React from "react";
-interface GuideListItemProps {
-  Icon: LucideIcon;
-  title: string;
-  body: string;
-  linkText?: string;
-}
+import Link from "next/link";
+import { GuideListItemProps } from "@/interfaces/interface";
 
 const GuideListItem: React.FC<GuideListItemProps> = ({
   Icon,

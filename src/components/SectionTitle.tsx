@@ -1,14 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { LucideIcon } from "lucide-react";
-
-interface SectionTitleProps {
-  title: string;
-  description?: string;
-  primaryButton?: string;
-  secondaryButton?: string;
-  SecondaryIcon?: LucideIcon;
-}
+import { SectionTitleProps } from "@/interfaces/interface";
 
 const SectionTitle: React.FC<SectionTitleProps> = ({
   title,

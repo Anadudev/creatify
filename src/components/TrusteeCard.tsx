@@ -1,16 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
-interface TrusteeCardProps {
-  trustee: {
-    logo: string;
-    companyName: string;
-    detail: string;
-    profile: string;
-    name: string;
-    title: string;
-  };
-}
+import { TrusteeCardProps } from "@/interfaces/interface";
 
 const TrusteeCard: React.FC<TrusteeCardProps> = ({ trustee }) => {
   return (

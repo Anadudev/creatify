@@ -1,25 +1,8 @@
-import { ArrowRight, LucideIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-interface TestimonialCardProps {
-  testimony: {
-    companyName: string;
-    companyLogo: string;
-    color: string;
-    name: string;
-    title: string;
-    testimony: string;
-    integratedApps: {
-      name: string;
-      url: string;
-      icon: LucideIcon | string;
-    }[];
-  };
-  isCurrent?: boolean;
-}
-
+import { TestimonialCardProps } from "@/interfaces/interface";
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   testimony,
   isCurrent,
