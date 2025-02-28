@@ -21,7 +21,7 @@ const resources = [
 
 const About = () => {
   return (
-    <section className="max-w-6xl mx-auto space-y-8 pb-4">
+    <section className="max-w-6xl mx-auto space-y-8">
       <div className="">
         <hr className="border-neutral-700" />
       </div>
@@ -38,12 +38,6 @@ const About = () => {
             thumbnail={resource.thumbnail}
           />
         ))}
-      </div>
-      <div className="">
-        <SectionTitle
-          title="Start automation your design system today"
-          primaryButton="Book demo"
-        />
       </div>
     </section>
   );

@@ -1,8 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 
 const navItems = [
   {
@@ -38,30 +39,39 @@ const navItems = [
 ];
 
 const Navbar = () => {
+  const [openNave, setOpenNav] = useState(false);
+
+  const toggleNav = () => {
+    setOpenNav(!openNave);
+  };
+
   return (
     <div className="w-full flex">
-      <div className="flex justify-between shadow-md shadow-neutral-700/50 items-center w-full p-4 max-w-6xl mx-auto">
+        <Menu
+          onClick={toggleNav}
+          className="absolute z-50 md:hidden block right-5 top-5 size-8 cursor-pointer"
+        />
+      <div className="md:flex justify-between shadow-md shadow-neutral-700/50 items-center w-full p-4 max-w-6xl mx-auto block space-y-11 md:space-y-0">
         <div className="">
           <Logo />
         </div>
-        <div className="flex gap-4">
+        <div className={`md:flex gap-4 ${openNave ? "" : "hidden"}`}>
           {navItems.map((item, index) => (
             <div key={index} className="group relative">
               {item.href ? (
                 <Link href={item?.href}>{item.name}</Link>
               ) : (
                 <div className="cursor-pointer inline-flex space-x-2">
-                  {" "}
                   <p>{item.name} </p>
                   <ChevronDown size={16} className="my-auto" />
                 </div>
               )}
               {item.submenu && (
-                <div className="hidden bg-neutral-900 group-hover:block absolute top-[200%] left-0 bg-neutral-850 shadow-lg  shadow-neutral-700 pt-4 pb-4 w-48 transition-all duration-200 rounded-md space-y-4">
+                <div className="hidden bg-neutral-900 group-hover:block md:absolute top-full left-0 bg-neutral-850 shadow-lg  shadow-neutral-700 pt-4 pb-4 w-48 transition-all duration-200 rounded-md space-y-4">
                   {item.submenu?.map((sub, index) => (
                     <div
                       key={index}
-                      className=" group text-sm hover:text-accent bg-accent/5 p-2"
+                      className="group text-sm hover:text-accent bg-accent/5 p-2"
                     >
                       <Link href={sub.href}>{sub.name}</Link>
                     </div>
@@ -71,7 +81,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="space-x-4">
+        <div className={`md:flex space-x-4 ${openNave ? "" : "hidden"}`}>
           <Button className="bg-transparent bg-gradient-to-b from-violet-400 to-violet-500 bg-clip-text hover:text-transparent border border-neutral-500 hover:shadow-sm hover:shadow-neutral-500 transition-shadow duration-100 font-extrabold ">
             Get Started
           </Button>

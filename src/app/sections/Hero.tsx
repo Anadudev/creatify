@@ -28,10 +28,10 @@ const Hero = () => {
         </Button>
       </div>
       <div className="w-full">
-        <div className="relative md:w-[80%] bg-cover bg-center max-w-4xl h-96 md:h-[25rem] mx-auto">
+        <div className="inner-shadow-rb inner-shadow-tl relative md:w-[80%] bg-cover bg-center max-w-4xl h-96 md:h-[25rem] mx-auto rounded-3xl">
           <Image
-            src="/hero-illustration.png"
-            className="aspect-square shadow-xl  -z-10"
+            src="/hero-illustration.jpg"
+            className="aspect-square shadow-xl  rounded-3xl -z-10"
             fill
             alt="Hero Image"
           />
