@@ -10,7 +10,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <div
       className={`flex border border-neutral-700 hover:border-neutral-600  ease-in-out rounded-2xl sm:w-[33rem] mx-auto h-64 gap-1 sm:gap-4 bg-neutral-900 absolute transition-transform duration-300 top-12 ${
-        isCurrent ? "sm:scale-110 z-40" : ""
+        isCurrent ? "" : ""
       }`}
     >
       <div

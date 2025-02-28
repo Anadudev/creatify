@@ -4,8 +4,8 @@ import TestimonialCard from "@/components/TestimonialCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { testimonials, settings } from "@/lib/data/testimonials.data";
-
+import { testimonials } from "@/lib/data/testimonials.data";
+import { settings } from "@/lib/config/slider.config";
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
