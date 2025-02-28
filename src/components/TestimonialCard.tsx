@@ -9,8 +9,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex border border-neutral-700 hover:border-neutral-600  ease-in-out rounded-2xl w-[33rem] mx-auto h-64 gap-4 bg-neutral-900 absolute transition-transform duration-300 top-12 ${
-        isCurrent ? "scale-110 z-40" : ""
+      className={`flex border border-neutral-700 hover:border-neutral-600  ease-in-out rounded-2xl sm:w-[33rem] mx-auto h-64 gap-1 sm:gap-4 bg-neutral-900 absolute transition-transform duration-300 top-12 ${
+        isCurrent ? "sm:scale-110 z-40" : ""
       }`}
     >
       <div
@@ -20,7 +20,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         }}
         className="flex-2 flex flex-col gap-4 justify-between p-4 rounded-tl-2xl rounded-bl-2xl"
       >
-        <div className="relative h-7 w-full">
+        <div className="relative h-5 sm:h-7 w-full">
           <Image
             src={testimony.companyLogo}
             alt={testimony.companyName}
@@ -28,8 +28,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             className="object-contain"
           />
         </div>
-        <div className="">
-          <p className="uppercase font-bold text-neutral-500">
+        <div className="space-y-2">
+          <p className="uppercase text-sm sm:text-base font-bold text-neutral-500">
             integrated apps
           </p>
           <div className="flex gap-2">
@@ -45,7 +45,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
         <ActionLink text="Case study" link="#" />
       </div>
-      <div className="flex-1 space-y-4 p-4">
+      <div className="flex flex-col justify-center flex-1 space-y-4 text-sm sm:text-base p-2 sm:p-4">
         <div className="">
           <p className="font-bold text-neutral-50">{testimony.name}</p>
           <span className="capitalize font-bold text-neutral-500">
