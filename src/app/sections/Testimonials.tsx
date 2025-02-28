@@ -131,7 +131,7 @@ const Testimonials = () => {
   };
   return (
     <section>
-      <div className="w-full py-8">
+      <div className="w-full py-8 px-2">
         <Slider
           {...settings}
           className="relative"

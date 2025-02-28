@@ -67,7 +67,7 @@ const lovedByCompanyLogos = [
 
 const LovedBy = () => {
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 px-2">
       <h2 className="text-xl font-bold text-center">
         Creatify is loved by
       </h2>

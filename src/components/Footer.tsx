@@ -72,15 +72,15 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <footer className="max-w-6xl mx-auto space-y-4">
+    <footer className="max-w-6xl mx-auto space-y-8 sm:space-y-4 px-2">
       <div className="">
         <hr className="border-neutral-700" />
       </div>
-      <div className=" flex justify-between">
+      <div className=" flex flex-col sm:flex-row gap-4 justify-between">
         <div className="">
           <Logo />
         </div>
-        <div className="flex pr-8 gap-9 justify-start">
+        <div className="flex flex-wrap pr-8 gap-9 justify-between ssm:justify-start">
           {navItems.map((item, index) => (
             <div key={index}>
               <h3 className="mb-4 font-bold text-lg">{item.title}</h3>
@@ -101,7 +101,7 @@ const Footer = () => {
       <div className="">
         <hr className="border-neutral-700" />
       </div>
-      <div className="flex justify-between p-4 text-neutral-400 font-semibold text-sm">
+      <div className="flex flex-wrap gap-4 justify-between p-4 text-neutral-400 font-semibold text-sm">
         <div className="flex gap-4">
           <p>Privacy Policy</p>
           <p>Terms & Conditions</p>

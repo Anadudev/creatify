@@ -53,7 +53,7 @@ const trustees = [
 
 const Trustees = () => {
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 p-2 sm:p-0">
       <SectionTitle
         title="Trusted by product teams"
         description="Book your demo and start automating the distribution of you design -- your team will love it"

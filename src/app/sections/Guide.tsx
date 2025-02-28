@@ -66,7 +66,7 @@ const guideList = [
 
 const Guide = () => {
   return (
-    <section className=" max-w-6xl mx-auto space-y-8">
+    <section className=" max-w-6xl mx-auto space-y-8 px-2">
       <SectionTitle
         title="Easy setup and instant output"
         description="Noting has been more easy for designers and more customizable for developers"
@@ -74,7 +74,7 @@ const Guide = () => {
         secondaryButton="watch video"
         SecondaryIcon={PlayCircle}
       />
-      <div className="flex w-fit mx-auto gap-4">
+      <div className="flex flex-col sm:flex-row w-fit mx-auto gap-4">
         {guides.map((guide, index) => (
           <GuideCard
             key={index}

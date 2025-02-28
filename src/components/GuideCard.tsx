@@ -17,7 +17,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
   thumbnail
 }) => {
   return (
-    <div className="border flex text-center flex-col rounded-xl border-neutral-600 max-w-96">
+    <div className="border flex flex-1 text-center flex-col rounded-xl border-neutral-600 max-w-96">
       <div className="shadow-xl p-4 shadow-neutral-700/50 flex flex-col gap-4">
         <div className="">
           <h3 className="text-2xl font-bold">{title}</h3>
