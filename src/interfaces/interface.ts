@@ -63,3 +63,9 @@ export interface ButtonProps
 	VariantProps<typeof buttonVariants> {
 	asChild?: boolean;
 }
+
+export interface ActionLinkProps {
+	link: string;
+	text: string;
+	className?: string;
+}

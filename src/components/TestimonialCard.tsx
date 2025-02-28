@@ -1,8 +1,8 @@
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { TestimonialCardProps } from "@/interfaces/interface";
+import ActionLink from "@/components/ActionLink";
+
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   testimony,
   isCurrent,
@@ -43,13 +43,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             ))}
           </div>
         </div>
-        <Link
-          className="bg-neutral-50 flex items-center justify-center gap-2 px-2 py-1 rounded-full text-black font-bold"
-          href="#"
-        >
-          <p className="">Case study</p>
-          <ArrowRight className="bg-black text-neutral-50 p-1 rounded-full" />
-        </Link>
+        <ActionLink text="Case study" link="#" />
       </div>
       <div className="flex-1 space-y-4 p-4">
         <div className="">

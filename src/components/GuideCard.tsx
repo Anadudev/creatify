@@ -1,8 +1,7 @@
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { GuideCardProps } from "@/interfaces/interface";
+import ActionLink from "@/components/ActionLink";
 
 
 const GuideCard: React.FC<GuideCardProps> = ({
@@ -12,7 +11,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
   thumbnail
 }) => {
   return (
-    <div className="border flex flex-1 text-center flex-col rounded-xl border-neutral-600 max-w-96">
+    <div className="group border flex flex-1 text-center flex-col rounded-xl border-neutral-600 max-w-96">
       <div className="shadow-xl flex-1 justify-between p-4 shadow-neutral-700/50 flex flex-col gap-4">
         <div className="">
           <h3 className="text-2xl font-bold">{title}</h3>
@@ -21,17 +20,12 @@ const GuideCard: React.FC<GuideCardProps> = ({
           <p className="text-neutral-400">{description}</p>
         </div>
         <div className="">
-          <Link
-            href="#"
-            className="text-black bg-neutral-50 py-2 px-4 rounded-full flex w-fit gap-4 font-bold mx-auto"
-          >
-            <span className="">{linkText} </span><ArrowRight className="bg-black text-neutral-50 rounded-full p-1" />
-          </Link>
+          <ActionLink link="#" text={linkText} />
         </div>
       </div>
       <div className="">
-        <div className="relative h-48 bg-cover">
-          <Image src={thumbnail || ""} className="h-full rounded-b-xl" alt="" fill />
+        <div className="relative h-48 bg-cover overflow-hidden">
+          <Image src={thumbnail || ""} className="h-full rounded-b-xl group-hover:scale-110 transition-all ease-in-out duration-200 object-cover" alt="" fill />
         </div>
       </div>
     </div>
