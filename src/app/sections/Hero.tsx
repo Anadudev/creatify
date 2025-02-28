@@ -1,13 +1,16 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Hero = () => {
   return (
     <section className="pt-16 space-y-9 max-w-6xl mx-auto  px-2">
-      <Link href={'#'} className="text-black font-bold bg-neutral-50 w-fit px-4 py-2 rounded-full mx-auto flex items-center justify-center gap-4 cursor-pointer text-sm">
+      <Link
+        href={"#"}
+        className="text-black font-bold bg-neutral-50 w-fit px-4 py-2 rounded-full mx-auto flex items-center justify-center gap-4 cursor-pointer text-sm"
+      >
         <p className="">Learn About the Creatify Design Token Format</p>
         <ArrowRight
           size={20}
