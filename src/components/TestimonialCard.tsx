@@ -9,8 +9,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex border border-neutral-700 hover:border-neutral-600  ease-in-out rounded-2xl sm:w-[33rem] mx-auto h-64 gap-1 sm:gap-4 bg-neutral-900 absolute transition-transform duration-300 top-12 ${
-        isCurrent ? "" : ""
+      className={`flex flex-col sm:flex-row border border-neutral-700 hover:border-neutral-600  ease-in-out rounded-2xl sm:w-[33rem] w-screen aspect-video mx-auto sm:h-64 gap-1 sm:gap-4 bg-neutral-900 absolute -mt-4 transition-transform duration-300 top-12 ${
+        isCurrent ? "sm:scale-110" : ""
       }`}
     >
       <div
@@ -18,7 +18,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         style={{
           background: `linear-gradient(140deg, ${testimony.color} 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)`,
         }}
-        className="flex-2 flex flex-col gap-4 justify-between p-4 rounded-tl-2xl rounded-bl-2xl"
+        className="flex-2 flex flex-col gap-4 justify-between p-4 rounded-tl-2xl rounded-bl-2xl p-2"
       >
         <div className="relative h-5 sm:h-7 w-full">
           <Image

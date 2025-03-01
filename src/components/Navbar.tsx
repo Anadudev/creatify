@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ChevronDown, ChevronUp, Menu } from "lucide-react";
+import { ChevronDown, ChevronUp, UserRound } from "lucide-react";
 import { navItems } from "@/lib/data/navbar.data";
 
 const MobileNavbar = () => {
@@ -83,9 +83,9 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex">
-      <Menu
+      <UserRound
         onClick={toggleNav}
-        className="absolute z-50 sm:hidden block right-5 top-5 size-8 cursor-pointer"
+        className="absolute text-neutral-400 z-50 sm:hidden block right-5 top-5 size-6 cursor-pointer"
       />
       <div className="flex sm:flex-row flex-col gap-4 justify-between shadow-md shadow-neutral-700/50 items-center w-full p-4 max-w-6xl mx-auto space-y-0">
         <div className="mx-auto sm:mx-0">
