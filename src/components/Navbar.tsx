@@ -10,7 +10,7 @@ const MobileNavbar = () => {
   return (
     <div className="md:hidden card-bg-blur gap-4 fixed z-50 flex items-center justify-around bottom-4 left-1/2 transform -translate-x-1/2 bg-neutral-900 shadow-md shadow-neutral-700/50 bg-opacity-75 rounded-full px-6 py-4 w-9/12 max-w-sm">
       {navItems.map((item, index) => (
-        <div key={index} className="group relative">
+        <div key={index} title={item.name} className="group relative">
           {item.submenu ? (
             <div className="cursor-pointer flex space-x-2">
               <item.Icon size={24} />
