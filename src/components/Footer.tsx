@@ -83,12 +83,12 @@ const Footer = () => {
         <div className="flex flex-wrap pr-8 gap-9 justify-between ssm:justify-start">
           {navItems.map((item, index) => (
             <div key={index}>
-              <h3 className="mb-4 font-bold text-lg">{item.title}</h3>
+              <h3 className="mb-4 font-bold text-lg capitalize">{item.title}</h3>
               {item.items.map((item, index) => (
                 <div key={index}>
                   <Link
                     href={item.link}
-                    className="block mb-2 text-sm hover:text-accent transition-all duration-200 text-neutral-500"
+                    className="block mb-2 text-sm hover:text-accent transition-all duration-200 text-neutral-500 capitalize"
                   >
                     {item.name}
                   </Link>
